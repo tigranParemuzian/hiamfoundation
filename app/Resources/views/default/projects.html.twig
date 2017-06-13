@@ -1,0 +1,124 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">PROJECTS</h2>
+                    <hr>
+                </div>
+                <div class="col-md-8 text-content">
+                    <p>Hi-Am Charity Foundation was founded in May 2001 by Nshan Adjemian.</p>
+                    <b>
+                        Its mission is to foster cultural and spiritual growth, health, sport, art and educational development as well as economic and environmental security to the community through its specially designed programming and services.</b>
+                    <p>In December 2001, Hi-Am Charity Foundation Armenian Branch commenced its activity in Yerevan, Armenia.</p>
+                    <p>In 2002 two successful projects were accomplished – Hi-Ex Postal Services and Hi-Am University. SportsLover’s Club was a sportprogram realized in 2003.  In the same year, Hi-Am TV was created.</p>
+                    <p>Hi-Am Foundation’s Department of Arts is responsible for organizing and holding art events, exhibitions and concerts. Hi-Am Quartet, one of its projects, was established in 2005, the aim of which is to enrich our community with the help of classical music through special concerts and other educational programs.</p>
+                    <p>In 2005 Hi-Am Youth and Community Center (HAYACC) was formed that would later encompass the Hi-Am Educational Center. Its programs and services are specifically directed towards recently-immigrated and economically-disadvantaged youth and their families who experience adjustment difficulties due to the language and cultural barriers.</p>
+                    <p>Since 2008, Hi-Am Charity Foundation has been participating in the philanthropic and medical mission of helping children and young people with various orthopedic problems receive surgery and treatment in Armenia.</p>
+                            <p>The Foundation continues to faithfully fulfill its mission by implementing new projects designed for the year of 2015, one of which will be the reactivation of <a href="http://hi.am" target="_blank">hi.am</a> magazine.</p>
+                </div>
+                <div class="col-md-4">
+                    <form class="form-inline text-center">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                            <div class="input-group">
+                                <a href="#" class="input-group-addon"><i class="icon-search"></i></a>
+                                <input type="text" class="form-control" id="exampleInputAmount" placeholder="Search">
+                            </div>
+                        </div>
+                    </form>
+
+                    <h3 class="brand-name text-center" style="font-size: 28px; margin-top: 20px">Recent Posts</h3>
+                    <hr class="tagline-divider">
+                    <a href="#"><p class="text-center text-uppercase" style="font-size: 20px">
+                            FIND YOUR INNER POWER BY HELPING OTHERS
+                        </p>
+                    </a>
+                    <hr class="tagline-divider">
+                    <div class="pull-right-lg" style="border:0px solid; margin-top: 20px">
+                        <p class="well" style="padding:10px; margin-bottom:2px;">
+                            <span class="glyphicon glyphicon-calendar"></span>Calendar
+                        </p>
+                        <div class="col-md-12" style="padding:0px;">
+                            <br>
+                            <table class="table table-bordered table-style table-responsive">
+                                <tr>
+                                    <th colspan="2"><a href="?ym=<?php echo $prev; ?>"><span class="glyphicon glyphicon-chevron-left"></span></a></th>
+                                    <th colspan="3"> Jan - 2017<!--?php echo $html_title; ?--></th>
+                                    <th colspan="2"><a href="?ym=<?php echo $next; ?>"><span class="glyphicon glyphicon-chevron-right"></span></a></th>
+                                </tr>
+                                <tr>
+                                    <th>S</th>
+                                    <th>M</th>
+                                    <th>T</th>
+                                    <th>W</th>
+                                    <th>T</th>
+                                    <th>F</th>
+                                    <th>S</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td class="today">10</td>
+                                    <td>11</td>
+                                    <td >12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+
+                                <!--?php
+                                  foreach ($weeks as $week) {
+                                    echo $week;
+                                  };
+                                ?-->
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+{% endblock %}

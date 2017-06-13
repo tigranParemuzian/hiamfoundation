@@ -1,0 +1,7 @@
+{% block app_bundle_parent_info_list_widget %}
+    {% set label = form.title.vars.value %}
+    <label class="control-label required">{{ label }}</label>
+    {{ form_widget(form.title) }}
+    {{ form_widget(form.description) }}
+    {{ form_widget(form.date) }}
+{% endblock app_bundle_parent_info_list_widget %}

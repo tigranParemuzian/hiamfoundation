@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+    {% set lname = '' %}
+    {% set fname = '' %}
+    {% set description = '' %}
+    {% set position = '' %}
+    {% set image = person.image.first.getDownloadLink %}
+    {% for txt in person.text %}
+        {% if 'firstname' in txt.slug %}{% set fname = txt.value %}{% endif %}
+        {% if 'lastname' in txt.slug %}{% set lname = txt.value %}{% endif %}
+        {% if 'position' in txt.slug %}{% set position = txt.value %}{% endif %}
+        {% if 'description' in txt.slug %}{% set description = txt.value %}{% endif %}
+    {% endfor %}
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">{{ fname }}
+                        <strong>{{ lname }}</strong>
+                    </h2>
+                    <hr>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="{{ asset(image)|lbImageFilter('team_big') }}">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="intro-text text-center">{{ fname }} {{ lname }}
+                        <strong>{{ position }}</strong>
+                    </h2>
+                    <p>{{ description }}</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+{% endblock %}

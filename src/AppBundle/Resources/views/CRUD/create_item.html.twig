@@ -1,0 +1,8 @@
+{% if admin.isGranted('EDIT', object) and admin.hasRoute('edit') %}
+    <a href="{{ path('admin_app_item_create') }}"
+       target="_blank" class="btn btn-sm btn-default calculate_link"
+       title="{{ 'action_calculate'|trans({}, 'SonataAdminBundle') }}">
+        <span class="glyphicon glyphicon-plus"></span>&nbsp;Create Items
+    </a>{% else %}
+{#{% endif %}#}
+{% endif %}

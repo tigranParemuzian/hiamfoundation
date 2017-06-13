@@ -1,0 +1,12 @@
+{% block app_bundle_boolean_list_widget %}
+    {% set prt = '' %}
+    {% if form.parent.parent.vars.data is defined and form.parent.parent.vars.data.collectionValues is not null %}
+        {% set prt = form.parent.parent.vars.data.collectionValues.name %}
+        {% endif %}
+    {% set label = form.title.vars.value %}
+    <label class="control-label required">{{ label }}</label>
+    {{ form_widget(form.title) }}
+
+    {{ form_label(form.value) }}
+    {{ form_widget(form.value) }}
+{% endblock app_bundle_boolean_list_widget %}

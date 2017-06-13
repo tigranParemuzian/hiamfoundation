@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">{{ result.page.name|split(' ')[0] }}
+                        <strong>{{ result.page.name|split(' ')[1] }}</strong>
+                    </h2>
+                    <hr>
+                </div>
+
+                {% for key,person in result.data['Persons'][0].listValues %}
+
+                    {% set lname = '' %}
+                    {% set fname = '' %}
+                    {% set position = '' %}
+                    {% set slug = person.slug %}
+                    {% set image = person.image.first.getDownloadLink %}
+                    {% for txt in person.text %}
+                        {% if 'firstname' in txt.slug %}{% set fname = txt.value %}{% endif %}
+                        {% if 'lastname' in txt.slug %}{% set lname = txt.value %}{% endif %}
+                        {% if 'position' in txt.slug %}{% set position = txt.value %}{% endif %}
+                        {#{% if 'description' in txt.slug %}{% endif %}#}
+                    {% endfor %}
+
+                <div class="col-md-4 text-center card-fixed">
+                    <a href="{{ path('our-team-single', {'slug':slug}) }}">
+                        <img class="img-responsive staff-image" src="{{ asset(image)|lbImageFilter('team_slall') }}" alt="{{ lname }} {{ fname }} {{ position }}">
+                        <h3>{{ lname }} {{ fname }}
+                            <small>{{ position }}</small>
+                        </h3>
+                    </a>
+                </div>
+                {% if key+1 % 3 == 0 %}<div class="clearfix"></div>{% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+{% endblock %}

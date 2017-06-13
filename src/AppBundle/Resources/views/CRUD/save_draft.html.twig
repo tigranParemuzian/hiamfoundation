@@ -1,0 +1,5 @@
+{% if admin.isGranted('EDIT', object) and admin.hasRoute('edit')  and object.state != 1  %}
+    <a href="{% if admin.classnameLabel == 'Campaign' %}{{ path('admin_app_campaign_save_draft', {'campaignId':object.id}) }}{% elseif admin.classnameLabel == 'Project' %}{{ path('admin_app_project_save_draft', {'campaignId':object.id}) }}{% endif %}" class="btn btn-sm btn-default calculate_link" title="Save as Draft">
+        <i class="fa fa fa-save"></i>&nbsp;Copy To Draft
+    </a>
+{% endif %}

@@ -1,0 +1,57 @@
+{% block icon_type_widget %}
+{% set type = form.vars.unique_block_prefix|split('_')[2] %}
+    {% if type != 'image' and type != 'file' %}
+        {% set type = form.vars.unique_block_prefix|split('_')[4] %}
+    {% endif %}
+{% if  form.parent.children.title is defined %}
+    {% set label = form.parent.children.title.vars.value %}
+    {% set object = form.parent.vars.value %}
+
+        {% if object.filename %}
+            {% set filename = object.filename %}
+            <div class="sonata-collection-row">
+                <label class="control-label required">{{ label }}</label>
+            </div>
+            <div class="sonata-collection-row">
+                {% if type == 'file' %}
+                    {% set fileType = object.downloadLink|split('.')[1] %}
+                    <a href="{{ object.downloadLink }}" target="_blank">
+                        {% if fileType == 'doc' or fileType == 'docx' %}
+                        <i class="fa fa-file-word-o fa-6" aria-hidden="true" style="font-size: 50px"></i>
+                            {% elseif fileType == 'xls' or fileType == 'xlsx' %}
+                        <i class="fa fa-file-excel-o fa-6" aria-hidden="true" style="font-size: 50px"></i>
+                        {% elseif fileType == 'pdf' %}
+                        <i class="fa fa-file-pdf-o fa-6" aria-hidden="true" style="font-size: 50px"></i>
+                        {% else %}
+                        <i class="fa fa-file-zip-o fa-6" aria-hidden="true" style="font-size: 50px"></i>
+                        {% endif %}
+                    </a>
+                {% elseif type == 'image' %}
+                    {% if 'mp4' in object.downloadLink|split('.') or 'webm' in object.downloadLink|split('.') %}
+                        <a href="#" data-toggle="modal" data-target="#imagemodal" class="icon-type-widget">
+                            <input type="hidden" value="{{ object.fileOriginalName }}">
+                            <video  height="auto" width="50%"  src="{{ object.downloadLink }}" controls>
+                                <source src="devstories.webm"
+                                        type='video/webm;codecs="vp8, vorbis"'/>
+                                <source src="devstories.mp4"
+                                        type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+                            </video>
+                        </a>
+                        {% else %}
+                            <a href="#" data-toggle="modal" data-target="#imagemodal" class="icon-type-widget">
+                                <input type="hidden" value="{{ object.fileOriginalName }}">
+                                <img  height="auto" width="50%"  src="{{ object.downloadLink }}">
+                            </a>
+                        {% endif %}
+
+                        {% endif %}
+                <a href="{{ path('remove_image', {'filename' : filename, 'object' : object.className  }) }}">
+                    <span class="glyphicon glyphicon-remove"></span></a>
+            </div>
+            {% else %}
+                <label>{{ label }}</label>
+                {{ form_widget(form) }}
+            {% endif %}
+{% endif %}
+
+{% endblock icon_type_widget %}

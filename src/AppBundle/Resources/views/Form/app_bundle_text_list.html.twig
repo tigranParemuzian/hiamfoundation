@@ -1,0 +1,10 @@
+{% block app_bundle_text_list_widget %}
+    {% set label = form.title.vars.value %}
+<label class="control-label required">{{ label }}</label>
+    {{ form_widget(form.title) }}
+    {#{% if label != "About Description" and label != "About" and label != "About ONEArmenia" and label != "Select Category" and label != 'About Interviewer' %}#}
+        {#<input id="{{ form.value.vars.id }}" name="{{ form.value.vars.full_name }}" class="form-control" type="text" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ form.value.vars.value }}" {% endif %}/>#}
+    {#{% else %}#}
+        {{ form_widget(form.value) }}
+    {#{% endif %}#}
+{% endblock app_bundle_text_list_widget %}

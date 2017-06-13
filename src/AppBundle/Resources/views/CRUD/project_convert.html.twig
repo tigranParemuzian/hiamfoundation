@@ -1,0 +1,6 @@
+{% if admin.isGranted('EDIT', object) and admin.hasRoute('edit') and object.state != 1 %}
+    <a href="{{ path('admin_app_campaign_project_convert', {'campaignId':object.id}) }}" class="btn btn-sm btn-default calculate_link"
+       title="{{ 'action_calculate'|trans({}, 'SonataAdminBundle') }}">
+        <i class="fa fa-cloud-upload"></i>&nbsp;Convert To Project
+    </a>
+{% endif %}

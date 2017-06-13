@@ -1,0 +1,26 @@
+{% set url='' %}
+{% set label='' %}
+{% if admin.getLabel == "Campaign" %}
+    {% if object.state in [0,2] %}
+        {% set url = path('campaign_main') %}
+    {% else %}
+        {% set url = path('campaign_draft', {'slug':object.tempSlug}) %}
+    {% endif %}
+    {% set label='Show Campaign' %}
+{% elseif admin.getLabel == 'Project' %}
+    {% set label='Show Project' %}
+    {% if object.state == 0 %}
+        {% set url = path('projects_single', {'slag':object.slug}) %}
+    {% elseif object.state == 1 %}
+        {% set url = path('projects_single_draft', {'slag':object.tempSlug}) %}
+    {% endif %}
+
+{% endif %}
+
+    <a href="{{ url }}"
+       target="_blank"
+       class="btn btn-sm btn-default calculate_link"
+       title="{{ 'action_calculate'|trans({},
+       'SonataAdminBundle') }}">
+        <i class="fa fa-eye" aria-hidden="true"></i> <span>{{- label -}}</span>
+    </a>

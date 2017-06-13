@@ -1,0 +1,15 @@
+{% block campaign_values_type_widget %}
+    {% if form.parent.vars.value %}
+    {% set object = form.parent.vars.value %}
+    {% if object.values %}
+    {% set settings = object.values %}
+        {% else %}
+            {% set settings = [] %}
+        {% endif %}
+{% else %}
+    {% set object = [] %}
+{% endif %}
+    {% if object.id %}
+        {{ render(controller('AppBundle:Main:attrList', { 'objectId': object.id, 'object' : sonata_admin.admin.classnameLabel })) }}
+    {% endif %}
+{% endblock campaign_values_type_widget %}

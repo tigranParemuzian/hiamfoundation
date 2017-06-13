@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{% block title %}Hiamfoundation{% endblock %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" type="text/css"
+              href="{{ asset('jquery_components/bootstrap/dist/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css"
+              href="{{ asset('jquery_components/bootstrap/dist/css/bootstrap-theme.min.css') }}">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/app/css/business-casual.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/app/css/calendar.css') }}">
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+              rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
+              rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+{% block banner %}
+    <header>
+        <div class="brand">
+            <a href="{{ path('homepage') }}"><img src="{{ asset('bundles/app/images/logo.png') }}"></a></div>
+        {#<div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>#}
+        <!-- Navigation -->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                    <a class="navbar-brand" href="{{ path('homepage') }}">
+                        <img width="100px" src="{{ asset('bundles/app/images/logo.png') }}">
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        {#{{ dump(path('homepage')) }}#}
+                        <li {% if app.request.requestUri == path('homepage') %}class="active"{% endif %}>
+                            <a href="{{ path('homepage') }}">Home</a>
+                        </li>
+                        <li {% if app.request.requestUri == path('projects') %}class="active"{% endif %} >
+                            <a href="{{ path('projects') }}">Projects</a>
+                        </li>
+                        <li {% if app.request.requestUri == path('our-team') %}class="active"{% endif %} >
+                            <a href="{{ path('our-team') }}">Our&nbsp;Team</a>
+                        </li>
+                        <li {% if app.request.requestUri == path('contact-us') %}class="active"{% endif %} >
+                            <a href="{{ path('contact-us') }}">Contact&nbsp;Us</a>
+                        </li>
+                        <li {% if app.request.requestUri == path('news') %}class="active"{% endif %} >
+                            <a href="{{ path('news') }}">ANNOUNCEMENT</a>
+                        </li>
+                        <li {% if app.request.requestUri == path('about-us') %}class="active"{% endif %} >
+                            <a href="{{ path('about-us') }}">About us</a>
+                        </li>
+                        <li {% if app.request.requestUri == path('brunches-and-subdivisions') %}class="active"{% endif %} >
+                            <a href="{{ path('brunches-and-subdivisions') }}">Branches</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    </header>
+
+
+{% endblock %}
+<div class="container">
+
+{% block content %}
+
+{% endblock %}
+</div>
+{% block footer %}
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 text-left">
+                    <p>Hi-Am Charity Foundation &copy; 2013</p>
+                </div>
+                <div class="col-lg-4 text-right">
+                    <p>
+                        <a href="https://www.facebook.com/HI-AM-Charity-Foundation-883977364956853/"
+                           class="facebook_link" title="" target="_blank" data-toggle="tooltip" data-placement="top"
+                           data-original-title="Facebook"><i class="icon-facebook"></i></a>
+                        <a href="https://youtube.com/channel/UC5XVi7pp-Zrc6zuv8DmWCvQ" class="youtube_link"
+                           title="" target="_blank" data-toggle="tooltip" data-placement="top"
+                           data-original-title="YouTube"><i class="icon-youtube"></i>
+                        </a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('jquery_components/jquery/dist/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('jquery_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    {#<script type="text/javascript" src="{{ asset('bundles/app/js/calendar.js') }}"></script>#}
+
+{% endblock %}
+</body>
+</html>

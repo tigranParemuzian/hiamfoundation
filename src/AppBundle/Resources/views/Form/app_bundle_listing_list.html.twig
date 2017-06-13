@@ -1,0 +1,70 @@
+{% block app_bundle_listing_list_type_widget %}
+    {% if form.parent.vars.value %}
+    {% set object = form.parent.vars.value %}
+    {% if object.values %}
+    {% set settings = object.values %}
+        {% else %}
+            {% set settings = [] %}
+        {% endif %}
+{% else %}
+    {% set object = [] %}
+{% endif %}
+    {% if form.children.actualId is defined %}{% set thisId = form.children.actualId.vars.value %}{% endif %}
+    {% set objectId = form.children.belongsToObject.vars.value %}
+    {% set objectName = form.children.belongsToObjectName.vars.value %}
+    <input type="hidden" name="data-item-id" value="{{ thisId }}" >
+    <div class="form-group col-md-6" >
+        {#{{ form_label(form.name) }}#}
+        {{ form_widget(form.belongsToObjectName) }}
+        {{ form_widget(form.belongsToObject) }}
+        <div class="hidden">
+            {{ form_widget(form.collectionValues) }}
+        </div>
+        {{ form_widget(form.sortOrdering) }}
+        {{ form_widget(form.name) }}
+    </div>
+    {% if thisId > 0 %}
+    <div class="crud_bnt col-md-6 ">
+          <div class="form-group col-md-{% if 'collectionvalues' in app.request.attributes.get('_route') %}1{% else %}3{% endif %}">
+            <span class="sonata-ba-sortable-handler ui-icon ui-icon-grip-solid-horizontal"></span>
+        </div>
+        <div class="form-group col-md-{% if 'collectionvalues' in app.request.attributes.get('_route') %}1{% else %}2{% endif %}" style="padding-left: 0px">
+            <button type="submit" class="btn btn-sm btn-success" name="btn_update_and_edit_list_value[{{ thisId }}]">
+                <i class="fa fa-pencil-square-o"></i>
+            </button>
+        </div>
+        <div class="form-group col-md-{% if 'collectionvalues' in app.request.attributes.get('_route') %}1{% else %}2{% endif %}">
+            <button type="submit"
+                    class="btn btn-sm btn-danger sonata-collection-delete">
+                <i class="fa fa-trash"></i></button>
+        </div>
+    </div>
+        {% else %}
+            <div class="crud_bnt  col-md-6 ">
+                <div class="form-group col-md-{% if 'collectionvalues' in app.request.attributes.get('_route') %}1{% else %}3{% endif %}">
+                    <span class="sonata-ba-sortable-handler ui-icon ui-icon-grip-solid-horizontal"></span>
+                </div>
+                <div class="form-group col-md-{% if 'collectionvalues' in app.request.attributes.get('_route') %}2{% else %}3{% endif %}" style="margin-left: -10px;">
+                    <button type="submit" class="btn btn-sm btn-success" name="btn_update_and_edit">
+                        <i class="fa fa-save"></i>
+                    </button>
+                </div>
+                <div class="form-group col-md-{% if 'collectionvalues' in app.request.attributes.get('_route') %}1{% else %}2{% endif %}" {% if 'collectionvalues' in app.request.attributes.get('_route') %} style="margin-left: -22px;"{% endif %}>
+                    <button type="submit"
+                            class="btn btn-sm btn-danger sonata-collection-delete">
+                        <i class="fa fa-trash"></i></button>
+                </div>
+            </div>
+        {% endif %}
+<script>
+    $('.sonata-collection-add').on('click', function () {
+        $(this).hide();
+    });
+    $('.sonata-collection-delete').on('click', function () {
+        $('.sonata-collection-add').show();
+    });
+    if($('.crud_bnt').length == 1){
+        $('.sonata-collection-delete').hide()
+    }
+</script>
+{% endblock app_bundle_listing_list_type_widget %}

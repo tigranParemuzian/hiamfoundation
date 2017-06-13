@@ -1,0 +1,5 @@
+{% block text_simple_type_widget %}
+    {% set type = type|default('text') %}
+    <h4 class=" control-label">{% if value is not empty %}{{ value }}{% endif %}</h4>
+    <input type="hidden" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %}/>
+{% endblock text_simple_type_widget %}

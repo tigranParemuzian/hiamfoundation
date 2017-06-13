@@ -1,0 +1,83 @@
+{% set cmpIsset  = menu_data %}
+<div id="top_all" class="top-all">
+    <div class="top-all_inner">
+        <div class="alert alert-success" >
+        </div>
+        <div class="top-navigation">
+            <div class="donate-menu">
+                <div class="dropdown">
+                    <p class="dropbtn">DONATE NOW</p>
+                    <div class="dropdown-content">
+                        {% if menu_data == true %}
+                        <a href="https://campaign.onearmenia.org/give/131228/#!/donation/checkout" target="_blank" class="item_link">donate<strong class="donate_online">online</strong></a>
+                        <a href="#" data-toggle="modal" data-target="#myModal" class="item_link">donate<strong class="donate_online">offline</strong></a>
+                        <a href="{{ path('donate') }}" class="item_link">donateby<strong class="donate_online">PayPal</strong></a>
+                        {% else %}
+                        <a href="{{ path('donate') }}" target="_blank" class="item_link">donate<strong class="donate_online">online</strong></a>
+                        <a href="#" data-toggle="modal" data-target="#myModal" class="item_link">donate<strong class="donate_online">offline</strong></a>
+                        <a href="{{ path('donate_by_paypal') }}" class="item_link">donateby<strong class="donate_online">PayPal</strong></a>
+                        {% endif %}
+                    </div>
+                </div>
+                <ul>
+                </ul>
+            </div>
+            <a href="{{ path('homepage') }}" class="top-nav-logo">
+                <img src="{{ asset('bundles/app/img/onearmenia-top-nav-logo.png') }}" alt="One Armenia" title="One Armenia"></a>
+            <a id="menu-close" href="javascript:void(0)" class=""><div class="menu-btn"></div></a>
+        </div>
+    </div>
+</div>
+{#End#}
+        {#Modal in offline paymant Start#}
+<!-- Modal 1-->
+<div class="modal fade right" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="donate_modal modal-body">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <img class="check_modal_logo" src="{{ asset('bundles/app/img/onearmenia-top-nav-logo.png') }}" alt="logo_popup">
+                <p class="check_modal_question">DON'T WANT TO DONATE ONLINE?</p>
+                <p class="check_modal_no_problem">No problem.<br> You can send a physical check to the  following address:</p>
+                <p class="check_modal_address">ONE Armenia Inc.<br> c/o Wework <br>520 Broadway, Santa Monica, CA 90401</p>
+                <p class="check_modal_italic"><em style="display: inline-block; max-width: 310px">Your Donation means a lot to us, so your name will still be listed as a supporter on our campaign page.</em></p>
+                <p class="check_modal_footer">We are a 501(c)(3) Certified Organization</p>
+            </div>
+        </div>
+    </div>
+</div>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li>
+            <a href="/">home</a>
+        </li>
+
+        {% if menu_data == true %}
+        <li>
+            <a href="{{ path('campaign_main') }}">CURRENT CAMPAIGN</a>
+        </li>
+        {% endif %}
+        <li>
+            <a href="{{ path('who_we_are') }}">Who We Are</a>
+        </li>
+        <li>
+            {#<a href="/projects">Featured Projects</a>#}
+            <a href="{{ path('projects') }}">Projects</a>
+        </li>
+        <li>
+            <a href="{{ path('our_process') }}">Our Process</a>
+        </li>
+        <li>
+            <a href="{{ path('our_impact') }}">Our Impact</a>
+        </li>
+        <li>
+            <a href="https://blog.onearmenia.org/" target="_blank">Blog</a>
+        </li>
+        <li>
+            <a href="{{ path('one-on-one') }}">oneonone</a>
+        </li>
+    </ul>
+</nav>

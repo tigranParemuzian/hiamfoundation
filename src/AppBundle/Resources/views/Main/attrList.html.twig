@@ -1,0 +1,161 @@
+<div class="alert alert-success alert-dismissable show-notif-ordering" style="display: none;">
+    <button type="button" class="close close-notf"  aria-hidden="true">×</button>
+    <span id="msg-ordering"></span>
+</div>
+    {% set visible = '' %}
+    {% set label = '' %}
+    {% for setting in objectValues[0].settings %}
+        {% set label = setting.attributesDefinition.attrName %}
+        {% if setting.attributesDefinition.attrClass == 'ListValues' %}
+            {% set icon = 'fa-files-o' %}
+            {% set url  = path('admin_app_listvalues_edit', {'id':setting.id}) %}
+        {% else %}
+            {% set icon = 'fa-list-ul' %}
+            {% set url  = path('admin_app_collectionvalues_edit', {'id':setting.id}) %}
+        {% endif %}
+        {% if setting.isEnable == 1 %}
+            {% set visible = 'fa-eye' %}
+        {% else %}
+            {% set visible = 'fa-eye-slash' %}
+        {% endif %}
+        <div class="form-group row" data-item-name={{ label }} data-attr-id="{{ setting.id }}">
+            <label class="sr-only" for="exampleInputAmount">{{ label }}</label>
+            <div class="input-group col-sm-4 listing-group">
+                <div class="col-sm-2 border-simple">
+                    <i class="fa fa-check-square"></i>
+                </div>
+                <ul class="sortable sortable-ul">
+                    <li class="ui-state-default">
+                        <div class="col-sm-10 border-simple" id="sortable">
+                            <a href="{{ path('documents_find', {'objName':label, 'objClass':setting.attributesDefinition.attrClass, 'blObjClass':objectType, blObjId:objectValues[0].id}) }}" class="">
+                                <span class="link-text sorting-label note">{{ label }}</span>
+                                <i class="fa {{ icon }} pull-right note link-to-page"></i>
+                            </a>
+                            <span class="fa-eye-awesome note icon-span-visible"
+                                  data-id="{{ setting.id }}"
+                                  data-status="{{ setting.isEnable }}"
+                                  data-types = "{{ objectType }}"
+                                  id = "{{ setting.id }}">
+                                <i class="fa {{ visible }} pull-right" aria-hidden="true"></i>
+                         </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    {% endfor %}
+{% set object = objectValues|first %}
+{% set show_name = '' %}
+{% if objectType == 'Campaign' %}
+    {% set show_name = 'Show '~object.name %}
+    {% if object.state == 0 or object.state == 2 %}
+        {% set url = path('campaign_main') %}
+    {% elseif object.state == 1 %}
+        {% set url = path('campaign_draft', {'slug':object.tempSlug}) %}
+    {% endif %}
+    <div class="cmp_redirect" style="float:right;">
+        <a href="{{ url }}" target="_blank">
+            <button type="button" class="btn btn-info">{{ show_name }}</button>
+        </a>
+    </div>
+    {% elseif objectType == 'Project' %}
+        {% set show_name = 'Show '~object.name %}
+        {% if object.state == 0 or object.state == 2 %}
+            {% set url = path('projects_single', {'slag':object.slug}) %}
+        {% elseif object.state == 1 %}
+            {% set url = path('projects_single_draft', {'slag':object.tempSlug}) %}
+        {% endif %}
+    <div class="cmp_redirect" style="float:right;">
+        <a href="{{ url }}" target="_blank">
+            <button type="button" class="btn btn-info">{{- show_name -}}</button>
+        </a>
+    </div>
+{% endif %}
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(document).on('click','.close-notf',function(){
+            $(this).parent().hide();
+        });
+
+        /*
+         * Send request to Api which change attribute Status(hide,show)
+         *
+         */
+        $( ".icon-span-visible" ).click(function() {
+            var id = $(this).data('id');
+            var status = $(this).attr('data-status');
+            var selfId = $(this).attr('id');
+            var types = $(this).attr('data-types');
+            if(!status){
+                status = 0;
+            }
+            if ($(this).find('i').is(".fa-eye-slash") ) {
+                $(this).find('i').removeClass();
+                $(this).find('i').addClass('fa fa-eye pull-right');
+                sendAjax(id, status, selfId, types);
+            } else {
+                $(this).find('i').removeClass();
+                $(this).find('i').addClass('fa fa-eye-slash pull-right');
+                sendAjax(id, status, selfId, types);
+            }
+        });
+
+        /**
+         * Ajax for hide and show
+         * @param id
+         * @param status
+         * @param selfId
+         * @param types
+         */
+        function sendAjax(id, status, selfId, types){
+            $.ajax({
+                url:'/api/items/'+id+'/attrs/'+status+'/shows/'+types,
+                type: 'GET',
+                dataType: 'json',
+                success:function(data){
+                    if(data == 1 || data == 0){
+                        console.log(data);
+                        $('#msg-ordering').html('Item  has been successfully updated.');
+                        $('.show-notif-ordering').show();
+                        $("#"+selfId).attr('data-status', data);
+                    }
+                },
+                error:function(){
+                    console.log('Api don"t work,please check it');
+                }
+            });
+        }
+
+        /*$(function(event, ui) {
+            $( "#sortable" ).sortable();
+            $( "#sortable" ).disableSelection();
+            $('#sortable').sortable({
+                cancel: '.note',
+                update: function(event,ui) {
+                    var labelName = ui.item.attr("data-item-name");
+                    var obj = [];
+                    $( ".sorable-divs" ).each(function(  ) {
+                        obj.push($( this ).attr('data-attr-id'));
+                    });
+                    $.ajax({
+                        url:'/api/items/positions/attributes',
+                        type: 'POST',
+                        dataType: 'json',
+                        data:{'object':obj},
+                        success:function(data){
+                            if(data == true){
+                                $('#msg-ordering').html('Item '+labelName+' has been successfully updated.');
+                                $('.show-notif-ordering').show();
+                            }
+                        },
+                        error:function(){
+                            console.log('Api don"t work,please check it');
+                        }
+                    })
+                }
+            });
+        } );*/
+
+    });
+</script>

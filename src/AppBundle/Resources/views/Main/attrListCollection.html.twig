@@ -1,0 +1,26 @@
+
+
+{% for setting in settings %}
+    <div class="form-group row">
+        <label class="sr-only" for="exampleInputAmount">{{ setting.label }}</label>
+        <div class="input-group col-sm-4">
+            <div class="col-sm-2 border-simple">
+                {% if isIsset[setting.id] is defined and isIsset[setting.id] == 1 %}
+                    <i class="fa fa-check-square"></i>
+
+                {% else %}
+                    <i class="fa fa-check-square-o"></i>
+                {% endif %}
+            </div>
+
+            <div class="col-sm-10 border-simple">
+                <a href="{{ path('admin_app_listvalues_edit', {'id':setting.id}) }}" class="">
+                    <span class="link-text">{{ setting.label }}</span>
+                    <i class="fa fa-list pull-right"></i>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+{% endfor %}
