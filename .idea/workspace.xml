@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1145204-1741-422d-a7d5-ee838dfe5894" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/team_big/uploads/files/1e5cff1b19f34fb577b5d19c93251f74.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/team_big/uploads/files/792e7d66cccd21be2a026e989bd1e250.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/0ef7210996644b77311646ed09141f80.jpg" afterPath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/0ef7210996644b77311646ed09141f80.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/1e5cff1b19f34fb577b5d19c93251f74.jpg" afterPath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/1e5cff1b19f34fb577b5d19c93251f74.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/35aa85f3ea235174353c87bdf1ff241c.jpg" afterPath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/35aa85f3ea235174353c87bdf1ff241c.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/780ceb21c72f0da080e967f69881e913.jpg" afterPath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/780ceb21c72f0da080e967f69881e913.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/792e7d66cccd21be2a026e989bd1e250.jpg" afterPath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/792e7d66cccd21be2a026e989bd1e250.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/9341931eea80192cd595c8752c635fa1.jpg" afterPath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/9341931eea80192cd595c8752c635fa1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/dbb78b3c593a53706b5a802daa5cc9f7.jpg" afterPath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/dbb78b3c593a53706b5a802daa5cc9f7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/f7c9191d934d1941ea3732891a85ed12.jpg" afterPath="$PROJECT_DIR$/web/media/cache/team_slall/uploads/files/f7c9191d934d1941ea3732891a85ed12.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/about.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/about.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/brunches.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/brunches.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/contact.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/contact.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/news.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/news.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/our-team.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/our-team.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/projects.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/projects.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/css/business-casual.css" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/css/business-casual.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/out-team-single.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/out-team-single.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="our-team.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="our-team.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/default/our-team.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+            <state relative-caret-position="124">
+              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding>
                 <element signature="e#1315#1330#0#Twig" expanded="true" />
               </folding>
@@ -117,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="out-team-single.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="out-team-single.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/default/out-team-single.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+            <state relative-caret-position="358">
+              <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -176,7 +157,6 @@
         <option value="$PROJECT_DIR$/../one_armenia/src/AppBundle/Controller/PagesController.php" />
         <option value="$PROJECT_DIR$/web/bundles/app/css/business-casual.css" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/default/out-team-single.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/our-team.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/contact.html.twig" />
@@ -186,6 +166,7 @@
         <option value="$PROJECT_DIR$/app/Resources/views/default/brunches.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/about.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/news.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/out-team-single.html.twig" />
       </list>
     </option>
   </component>
@@ -315,6 +296,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Traits" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hiamfoundation_new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hiamfoundation_new" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Service" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -922,12 +925,12 @@
       <workItem from="1497270054962" duration="949000" />
       <workItem from="1497338735075" duration="1000" />
       <workItem from="1497339178839" duration="3978000" />
-      <workItem from="1497347879638" duration="12549000" />
+      <workItem from="1497347879638" duration="13515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36631000" />
+    <option name="totallyTimeSpent" value="37597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -1302,14 +1305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/out-team-single.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/Simple-jQuery-Calendar-Schedule-Plugin-For-Bootstrap-Bic-Calendar/example/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1378,11 +1373,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/our-team.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        <state relative-caret-position="124">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
             <element signature="e#1315#1330#0#Twig" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/out-team-single.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
