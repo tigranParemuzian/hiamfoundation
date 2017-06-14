@@ -285,6 +285,10 @@ h2.intro-text a {
     color: white;
 }
 
+footer p {
+    color: gainsboro;
+}
+
 .muzika {
     position: absolute;
     left: 20px;
@@ -295,4 +299,21 @@ h2.intro-text a {
     position: absolute;
     left: -70px;
     top: 25px;
+}
+
+.social a i{
+    color: gainsboro;
+}
+.facebook_link{
+    min-width: 100px;
+}
+a.facebook_link :hover {
+    padding: 5px 5px 5px 5px;
+    background: #4d6ea9;
+    border-radius: 5px;
+}
+a.youtube_link :hover {
+    padding: 5px 5px 5px 5px;
+    background: #e62117;
+    border-radius: 5px;
 }
