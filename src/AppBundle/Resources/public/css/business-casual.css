@@ -275,3 +275,8 @@ footer p {
 .ui-datepicker-inline {
      margin: 25px auto;
 }
+
+h2.intro-text a {
+    font-size: 18px;
+    color: gray;
+}

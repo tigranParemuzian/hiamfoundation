@@ -49,13 +49,53 @@ class DefaultController extends Controller
      */
     public function ourTeamSingleAction(Request $request, $slug){
 
-//        $slug = $request->attributes->get('_route');
-
         $em = $this->getDoctrine()->getManager();
 
-        $result = $em->getRepository('AppBundle:ListValues')->findOneBy(['slug'=>$slug]);
-//dump($slug); exit;
-        return $this->render(':default:out-team-single.html.twig', ['person'=>$result]);
+        $collect = $em->getRepository('AppBundle:CollectionValues')->findOneBy(['name'=>'Persons']);
+
+        $idsToFilter = [$slug];
+
+        $settingsRm = $collect->getListValues()->filter(
+
+
+            function($entry) use ($idsToFilter) {
+                return in_array($entry->getSlug(), $idsToFilter);
+            }
+        );
+
+        if(!$settingsRm->isEmpty()){
+            $person = $settingsRm->first();
+        }else {
+            return $this->redirectToRoute('our-team');
+        }
+
+        $idsToFilter = [$person->getSortOrdering() - 1, $person->getSortOrdering() + 1 ];
+
+        $settingsRm = $collect->getListValues()->filter(
+
+
+            function($entry) use ($idsToFilter) {
+                return in_array($entry->getSortOrdering(), $idsToFilter);
+            }
+        );
+
+
+        if(!$settingsRm->isEmpty()){
+            if(count($settingsRm) === 1){
+                if($settingsRm->first()->getSortOrdering() < $person->getSortOrdering()){
+                    $last = $collect->getListValues()->first()->getSlug();
+                    $first = $settingsRm->first()->getSlug();
+                }else {
+                    $last = $settingsRm->first()->getSlug();
+                    $first = $collect->getListValues()->last()->getSlug();
+                }
+            }else{
+                $first = $settingsRm->first()->getSlug();
+                $last = $settingsRm->last()->getSlug();
+            }
+        }
+
+        return $this->render(':default:out-team-single.html.twig', ['person'=>$person, 'first'=>$first, 'last'=>$last]);
     }
 
     /**
