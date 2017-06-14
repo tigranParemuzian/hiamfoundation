@@ -232,7 +232,7 @@ liip_imagine:
         team_slall:
             quality: 90
             filters:
-                thumbnail: { size: [750, 450], mode: outbound }
+                thumbnail: { size: [500, 500], mode: outbound }
         team_big:
             quality: 90
             filters:

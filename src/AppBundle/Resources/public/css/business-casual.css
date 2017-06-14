@@ -267,3 +267,11 @@ footer p {
 .card-fixed{
     min-height: 350px;
 }
+
+.top-25 {
+    margin-top: 25px;
+}
+
+.ui-datepicker-inline {
+     margin: 25px auto;
+}
