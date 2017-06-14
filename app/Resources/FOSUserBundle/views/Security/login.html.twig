@@ -1,17 +1,4 @@
 {% extends 'base.html.twig' %}
- {% block stylesheets %}
-     <link rel="stylesheet" type="text/css" href="{{ asset('jquery_components/bootstrap/dist/css/bootstrap.min.css') }}">
-     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/app/font-awesome/css/font-awesome.css') }}">
-     <link rel="stylesheet" type="text/css" media="screen"
-           href="{{ asset('bundles/app/css/admin/login.css') }}">
-
-     <header id="header">
-         <div class="pull-right">
-         </div>
-     </header>
-
- {% endblock %}
-{% block menu %}{% endblock %}
 {% block content %}
                     {% block fos_user_content %}
                         <div id="main" role="main" style="margin-left:0;">
@@ -71,17 +58,3 @@
 
                     {% endblock fos_user_content %}
 {% endblock %}
-
-{% block footer %}
-    <div class="page-footer">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6">
-                <span class="txt-color-white">ONEArmenia - Admin © 2017</span>
-            </div>
-        </div>
-    </div>
-
-{% endblock %}
- {% block javascripts %}
-     <script type="text/javascript" src="{{ asset('jquery_components/jquery/dist/jquery.min.js') }}"></script>
- {% endblock %}

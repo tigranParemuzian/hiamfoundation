@@ -280,3 +280,19 @@ h2.intro-text a {
     font-size: 18px;
     color: gray;
 }
+
+.melodi a {
+    color: white;
+}
+
+.muzika {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+}
+
+.muzika-play {
+    position: absolute;
+    left: -70px;
+    top: 25px;
+}

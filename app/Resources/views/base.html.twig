@@ -16,13 +16,10 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('bundles/app/css/business-casual.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('bundles/app/css/calendar.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('jquery_components/jquery-ui/themes/base/jquery-ui.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css') }}">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
               rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
-              rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -35,6 +32,16 @@
 <body>
 {% block banner %}
     <header>
+        <div class="melodi">
+            <audio class="song" src="{{ asset('bundles/app/audio/Hi-Am Hymn.mp3') }}" autoplay loop>
+            </audio>
+            <a href="#" class="muzika">
+                <i class="fa fa-pause-circle-o fa-4x" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="muzika-play">
+                <i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i>
+            </a>
+        </div>
         <div class="brand">
             <a href="{{ path('homepage') }}"><img src="{{ asset('bundles/app/images/logo.png') }}"></a></div>
         {#<div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>#}
@@ -133,37 +140,16 @@
         $( "#example1" ).datepicker({
             appendText: "(yyyy-mm-dd)"
         });
-        /*$('#calendari_lateral1').bic_calendar({
-            //list of events in array
-            events: events,
-            //enable select
-            enableSelect: true,
-            //enable multi-select
-            multiSelect: true,
-            //set day names
-            dayNames: dayNames,
-            //set month names
-            monthNames: monthNames,
-            //show dayNames
-            showDays: true,
-            //show month controller
-            displayMonthController: true,
-            //show year controller
-            displayYearController: true,
-            //set ajax call
-            reqAjax: {
-                type: 'get',
-                url: 'http://bic.cat/bic_calendar/index.php'
-            }
+        $('.muzika').on('click', function () {
+            document.querySelector('.song').pause();
+            $('.muzika-play').css({left:'20px'});
+            $(this).css({left: "-70px"})
         });
-*/
-        /*var today = new Date();
-        var dd = today.getDate();
-        $.each($('td'), function () {
-            if(parseInt($(this).text()) == dd){
-                $(this).addClass('today');
-            }
-        })*/
+        $('.muzika-play').on('click', function () {
+            document.querySelector('.song').play();
+            $('.muzika').css({left:'20px'});
+            $(this).css({left: "-70px"})
+        })
     </script>
 {% endblock %}
 </body>
