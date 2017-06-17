@@ -318,3 +318,23 @@ a.youtube_link :hover {
     background: #e62117;
     border-radius: 5px;
 }
+
+.chanal-item {
+    height: 280px;
+}
+
+.item-hidden{
+    display: none;
+}
+
+.btn-md{
+    border-radius: 0;
+    background-color: gainsboro;
+    color: grey;
+}
+
+.btn-md:hover {
+    border-radius: 0;
+    background-color: grey;
+    color: gainsboro;
+}
