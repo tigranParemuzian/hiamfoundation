@@ -120,7 +120,7 @@ class EventListener
                 }
             }
 
-            apc_clear_cache('user');
+//            apc_clear_cache('user');
         }
 
         foreach($uow->getScheduledEntityUpdates() as $entity)
@@ -212,7 +212,7 @@ class EventListener
                         }
                     }
             }
-            apc_clear_cache('user');
+//            apc_clear_cache('user');
         }
 
         // check data before remove Po data and remove data whose created during create it
@@ -254,7 +254,7 @@ class EventListener
 
             }
 
-            apc_clear_cache('user');
+//            apc_clear_cache('user');
         }
     }
 

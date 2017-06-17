@@ -220,6 +220,7 @@ footer p {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-position-x: 0px;
 }
 
 .card-box {
