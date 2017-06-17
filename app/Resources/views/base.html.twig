@@ -32,6 +32,7 @@
 <body>
 {% block banner %}
     <header>
+        {% if (app.request.attributes.get('_route') == "homepage") %}
         <div class="melodi">
             <audio class="song" src="{{ asset('bundles/app/audio/Hi-Am Hymn.mp3') }}" autoplay loop>
             </audio>
@@ -42,6 +43,7 @@
                 <i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i>
             </a>
         </div>
+        {% endif %}
         <div class="brand">
             <a href="{{ path('homepage') }}"><img src="{{ asset('bundles/app/images/logo.png') }}"></a></div>
         {#<div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>#}
