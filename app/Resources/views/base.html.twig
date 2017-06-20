@@ -35,7 +35,7 @@
     <header>
         {% if (app.request.attributes.get('_route') == "homepage") %}
         <div class="melodi">
-            <audio class="song" src="{{ asset('bundles/app/audio/Hi-Am Hymn.mp3') }}" autoplay loop>
+            <audio class="song" src="{{ asset('bundles/app/audio/Hi-Am Hymn.mp3') }}" loop>
             </audio>
             <a href="#" class="muzika">
                 <i class="fa fa-pause-circle-o fa-4x" aria-hidden="true"></i>
@@ -133,27 +133,6 @@
     <script type="text/javascript" src="{{ asset('jquery_components/jquery/dist/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('jquery_components/jquery-ui/jquery-ui.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('jquery_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
-    {#<script type="text/javascript" src="{{ asset('bundles/app/js/calendar.js') }}"></script>#}
-    <script type="text/javascript">
-
-        var today = new Date();
-        var startDate = new Date(today.getFullYear(), 6, 1);
-        var endDate = new Date(today.getFullYear(), 6, 31);
-
-        $( "#example1" ).datepicker({
-            appendText: "(yyyy-mm-dd)"
-        });
-        $('.muzika').on('click', function () {
-            document.querySelector('.song').pause();
-            $('.muzika-play').css({left:'20px'});
-            $(this).css({left: "-70px"})
-        });
-        $('.muzika-play').on('click', function () {
-            document.querySelector('.song').play();
-            $('.muzika').css({left:'20px'});
-            $(this).css({left: "-70px"})
-        })
-    </script>
 {% endblock %}
 </body>
 </html>
