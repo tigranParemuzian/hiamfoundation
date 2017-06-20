@@ -218,6 +218,15 @@ footer p {
 }
 
 .box-home{
+    background: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position-x: 0px;
+}
+
+.home-bg{
     background: url('../images/bg-home.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -226,6 +235,9 @@ footer p {
     background-position-x: 0px;
 }
 
+.title-home{
+    font-size: 48px; color: #302934; margin-top: 115px;
+}
 .card-box {
     border: 1px solid #bbbbbb;
 }
@@ -413,5 +425,9 @@ iframe {
         position: static;
         top: 10px;
         right: 10px;
+    }
+
+    .title-home{
+        font-size: 48px; color: #302934; margin-top: 15px;
     }
 }
