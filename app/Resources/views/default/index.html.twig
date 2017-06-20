@@ -25,6 +25,7 @@
                     <div class="col-md-10 pull-left text-center">
                         <h3>HI-AM Charity Foundation</h3>
                     </div>
+                </div>
             </div>
         </div>
 
@@ -105,13 +106,12 @@
                         className = 'item-hidden';
                     }
                    $('.chanal').append('<div class="col-sm-4 text-center chanal-item '+className+'">' +
-                       '<iframe width="360" height="216" src="https://www.youtube.com/embed/'+ value.contentDetails.upload.videoId+'" frameborder="0" allowfullscreen></iframe>' +
+                       '<iframe width="350" src="https://www.youtube.com/embed/'+ value.contentDetails.upload.videoId+'" frameborder="0" allowfullscreen></iframe>' +
                        '<h5>'/* + value.snippet.title */+
                        '<small>' + value.snippet.title + '</small>' +
                        '</h5>' +
                        '</div>');
                 });
-                console.log(resultData.items);
                 $('button[name="more"]').on('click', function () {
                     $.each($('.item-hidden'), function (key, value) {
                         if(key <= 2){

@@ -191,6 +191,9 @@ footer p {
         table-layout: fixed;
         font-size: 1.25em;
     }
+    iframe {
+        width: 200px;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -337,4 +340,78 @@ a.youtube_link :hover {
     border-radius: 0;
     background-color: grey;
     color: gainsboro;
+}
+
+.box-home {
+    display: inline-block;
+}
+
+iframe {
+    width: 350px;
+}
+
+@media screen and (max-width: 1024px){
+    .navbar-nav {
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 0;
+    }
+
+
+    .nav>li>a {
+        font-size: 12px;
+    }
+
+    .navbar-brand img{
+        width: 70px;
+        margin-top: -5px;
+    }
+
+    .brand img{
+        width: 150px;
+        margin-top: -5px;
+    }
+
+    .melodi {
+        display: none;
+        padding: 35px;
+
+    }
+
+    .navbar {
+        background: url('../images/top.jpg') no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+
+    .navbar-collapse{
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        color: #FFF;
+        font-size: 12px;
+    }
+
+    .box-home {
+        display: inline-block;
+    }
+
+    iframe {
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    .card-date {
+        max-width: 50px;
+        background: rgba(0, 0, 0, 0.05);
+        color: #333;
+        position: static;
+        top: 10px;
+        right: 10px;
+    }
 }
