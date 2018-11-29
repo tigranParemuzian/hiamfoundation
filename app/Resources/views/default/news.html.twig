@@ -1,5 +1,16 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+{{ parent() }}
+    <style rel="stylesheet" type="text/css" >
+        p.line {
+            width: 100%;
+            border-bottom: 1px solid;
+            padding: 15px;
+        }
+    </style>
+{% endblock %}
+
 {% block content %}
     <div class="container">
 
@@ -16,7 +27,7 @@
 
                     <p>The duties for this position are as follows: Investigate news developments in the United States, Armenia, France and other European countries. Arrange in person and telephonic communications with people who can provide newsworthy information. Establish and maintain relationships with individuals and organizations in the community who are credible sources of information. Photograph or videotape community events, conduct interviews, and prepare narratives. Report news stories, relate the background, and describe details of events to the foundation's president for commentary and utilization in charitable activities, educational projects, as well as publication in online, print, and broadcast media through various televised shows and programs. Traveling will not be needed.</p>
                     <p>Apply by mailing your resume to Nshan Adjemian, Hi-Am Charity Foundation, 530 W Stocker St., #307, Glendale, CA 91202 (the job site and interview location).</p>
-
+                    <p class="line"></p>
                     <p><b>Employment Announcement <span class="text-danger">(expired)</span></b></p>
                     <p>Music Advisor needed</p>
 
