@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1145204-1741-422d-a7d5-ee838dfe5894" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/audio/Hi-Am Hymn.mp3" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/audio/Hi-Am-Hymn.mp3" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/bg-home.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/charityLogo1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/logo.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/logo.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,44 +70,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="49" column="100" lean-forward="false" selection-start-line="49" selection-start-column="100" selection-end-line="49" selection-end-column="100" />
+            <state relative-caret-position="407">
+              <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
               <folding>
                 <element signature="e#2681#2689#0#Twig" expanded="true" />
-                <element signature="e#3717#3725#0#Twig" expanded="true" />
-                <element signature="e#4245#4253#0#Twig" expanded="true" />
-                <element signature="e#4331#4339#0#Twig" expanded="true" />
-                <element signature="e#4451#4459#0#Twig" expanded="true" />
-                <element signature="e#4538#4546#0#Twig" expanded="true" />
-                <element signature="e#4662#4670#0#Twig" expanded="true" />
-                <element signature="e#4749#4757#0#Twig" expanded="true" />
-                <element signature="e#4767#4773#0#HTML" expanded="true" />
-                <element signature="e#4878#4888#0#Twig" expanded="true" />
-                <element signature="e#4967#4977#0#Twig" expanded="true" />
-                <element signature="e#4991#4997#0#HTML" expanded="true" />
-                <element signature="e#5100#5104#0#Twig" expanded="true" />
-                <element signature="e#5183#5187#0#Twig" expanded="true" />
-                <element signature="e#5307#5315#0#Twig" expanded="true" />
-                <element signature="e#5394#5402#0#Twig" expanded="true" />
-                <element signature="e#5518#5543#0#Twig" expanded="true" />
-                <element signature="e#5622#5647#0#Twig" expanded="true" />
-                <element signature="e#6146#6152#0#HTML" expanded="true" />
+                <element signature="e#3709#3717#0#Twig" expanded="true" />
+                <element signature="e#4234#4242#0#Twig" expanded="true" />
+                <element signature="e#4320#4328#0#Twig" expanded="true" />
+                <element signature="e#4440#4448#0#Twig" expanded="true" />
+                <element signature="e#4527#4535#0#Twig" expanded="true" />
+                <element signature="e#4651#4659#0#Twig" expanded="true" />
+                <element signature="e#4738#4746#0#Twig" expanded="true" />
+                <element signature="e#4756#4762#0#HTML" expanded="true" />
+                <element signature="e#4867#4877#0#Twig" expanded="true" />
+                <element signature="e#4956#4966#0#Twig" expanded="true" />
+                <element signature="e#4980#4986#0#HTML" expanded="true" />
+                <element signature="e#5089#5093#0#Twig" expanded="true" />
+                <element signature="e#5172#5176#0#Twig" expanded="true" />
+                <element signature="e#5296#5304#0#Twig" expanded="true" />
+                <element signature="e#5383#5391#0#Twig" expanded="true" />
+                <element signature="e#5507#5532#0#Twig" expanded="true" />
+                <element signature="e#5611#5636#0#Twig" expanded="true" />
+                <element signature="e#6135#6141#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -124,7 +123,7 @@
       <file leaf-file-name="projects.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/default/projects.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
+            <state relative-caret-position="612">
               <caret line="36" column="94" lean-forward="false" selection-start-line="36" selection-start-column="94" selection-end-line="36" selection-end-column="94" />
               <folding />
             </state>
@@ -161,6 +160,7 @@
       <find>calendari_lateral1</find>
       <find>hover</find>
       <find>song</find>
+      <find>home-bg&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>credit_application</replace>
@@ -203,8 +203,8 @@
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/public/css/business-casual.css" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/news.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
       </list>
     </option>
   </component>
@@ -330,8 +330,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -396,6 +394,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -462,20 +462,21 @@
       <workItem from="1497339178839" duration="3978000" />
       <workItem from="1497347879638" duration="21712000" />
       <workItem from="1547809120897" duration="2007000" />
+      <workItem from="1547816829093" duration="642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50254000" />
+    <option name="totallyTimeSpent" value="50896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-4" width="1865" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18361737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18581638" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -537,11 +538,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/news.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/projects.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="94" lean-forward="false" selection-start-line="36" selection-start-column="94" selection-end-line="36" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="100" lean-forward="false" selection-start-line="49" selection-start-column="100" selection-end-line="49" selection-end-column="100" />
+          <folding>
+            <element signature="e#2681#2689#0#Twig" expanded="true" />
+            <element signature="e#3709#3717#0#Twig" expanded="true" />
+            <element signature="e#4234#4242#0#Twig" expanded="true" />
+            <element signature="e#4320#4328#0#Twig" expanded="true" />
+            <element signature="e#4440#4448#0#Twig" expanded="true" />
+            <element signature="e#4527#4535#0#Twig" expanded="true" />
+            <element signature="e#4651#4659#0#Twig" expanded="true" />
+            <element signature="e#4738#4746#0#Twig" expanded="true" />
+            <element signature="e#4756#4762#0#HTML" expanded="true" />
+            <element signature="e#4867#4877#0#Twig" expanded="true" />
+            <element signature="e#4956#4966#0#Twig" expanded="true" />
+            <element signature="e#4980#4986#0#HTML" expanded="true" />
+            <element signature="e#5089#5093#0#Twig" expanded="true" />
+            <element signature="e#5172#5176#0#Twig" expanded="true" />
+            <element signature="e#5296#5304#0#Twig" expanded="true" />
+            <element signature="e#5383#5391#0#Twig" expanded="true" />
+            <element signature="e#5507#5532#0#Twig" expanded="true" />
+            <element signature="e#5611#5636#0#Twig" expanded="true" />
+            <element signature="e#6135#6141#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/our-team.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="59" lean-forward="false" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -575,24 +642,24 @@
           <caret line="37" column="100" lean-forward="true" selection-start-line="37" selection-start-column="100" selection-end-line="37" selection-end-column="100" />
           <folding>
             <element signature="e#2681#2689#0#Twig" expanded="true" />
-            <element signature="e#3717#3725#0#Twig" expanded="true" />
-            <element signature="e#4245#4253#0#Twig" expanded="true" />
-            <element signature="e#4331#4339#0#Twig" expanded="true" />
-            <element signature="e#4451#4459#0#Twig" expanded="true" />
-            <element signature="e#4538#4546#0#Twig" expanded="true" />
-            <element signature="e#4662#4670#0#Twig" expanded="true" />
-            <element signature="e#4749#4757#0#Twig" expanded="true" />
-            <element signature="e#4767#4773#0#HTML" expanded="true" />
-            <element signature="e#4878#4888#0#Twig" expanded="true" />
-            <element signature="e#4967#4977#0#Twig" expanded="true" />
-            <element signature="e#4991#4997#0#HTML" expanded="true" />
-            <element signature="e#5100#5104#0#Twig" expanded="true" />
-            <element signature="e#5183#5187#0#Twig" expanded="true" />
-            <element signature="e#5307#5315#0#Twig" expanded="true" />
-            <element signature="e#5394#5402#0#Twig" expanded="true" />
-            <element signature="e#5518#5543#0#Twig" expanded="true" />
-            <element signature="e#5622#5647#0#Twig" expanded="true" />
-            <element signature="e#6146#6152#0#HTML" expanded="true" />
+            <element signature="e#3709#3717#0#Twig" expanded="true" />
+            <element signature="e#4234#4242#0#Twig" expanded="true" />
+            <element signature="e#4320#4328#0#Twig" expanded="true" />
+            <element signature="e#4440#4448#0#Twig" expanded="true" />
+            <element signature="e#4527#4535#0#Twig" expanded="true" />
+            <element signature="e#4651#4659#0#Twig" expanded="true" />
+            <element signature="e#4738#4746#0#Twig" expanded="true" />
+            <element signature="e#4756#4762#0#HTML" expanded="true" />
+            <element signature="e#4867#4877#0#Twig" expanded="true" />
+            <element signature="e#4956#4966#0#Twig" expanded="true" />
+            <element signature="e#4980#4986#0#HTML" expanded="true" />
+            <element signature="e#5089#5093#0#Twig" expanded="true" />
+            <element signature="e#5172#5176#0#Twig" expanded="true" />
+            <element signature="e#5296#5304#0#Twig" expanded="true" />
+            <element signature="e#5383#5391#0#Twig" expanded="true" />
+            <element signature="e#5507#5532#0#Twig" expanded="true" />
+            <element signature="e#5611#5636#0#Twig" expanded="true" />
+            <element signature="e#6135#6141#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -825,53 +892,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="43" column="94" lean-forward="false" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="94" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/projects.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
+        <state relative-caret-position="612">
           <caret line="36" column="94" lean-forward="false" selection-start-line="36" selection-start-column="94" selection-end-line="36" selection-end-column="94" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        <state relative-caret-position="407">
+          <caret line="70" column="29" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
           <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
+            <element signature="e#2681#2689#0#Twig" expanded="true" />
+            <element signature="e#3709#3717#0#Twig" expanded="true" />
+            <element signature="e#4234#4242#0#Twig" expanded="true" />
+            <element signature="e#4320#4328#0#Twig" expanded="true" />
+            <element signature="e#4440#4448#0#Twig" expanded="true" />
+            <element signature="e#4527#4535#0#Twig" expanded="true" />
+            <element signature="e#4651#4659#0#Twig" expanded="true" />
+            <element signature="e#4738#4746#0#Twig" expanded="true" />
+            <element signature="e#4756#4762#0#HTML" expanded="true" />
+            <element signature="e#4867#4877#0#Twig" expanded="true" />
+            <element signature="e#4956#4966#0#Twig" expanded="true" />
+            <element signature="e#4980#4986#0#HTML" expanded="true" />
+            <element signature="e#5089#5093#0#Twig" expanded="true" />
+            <element signature="e#5172#5176#0#Twig" expanded="true" />
+            <element signature="e#5296#5304#0#Twig" expanded="true" />
+            <element signature="e#5383#5391#0#Twig" expanded="true" />
+            <element signature="e#5507#5532#0#Twig" expanded="true" />
+            <element signature="e#5611#5636#0#Twig" expanded="true" />
+            <element signature="e#6135#6141#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="49" column="100" lean-forward="false" selection-start-line="49" selection-start-column="100" selection-end-line="49" selection-end-column="100" />
-          <folding>
-            <element signature="e#2681#2689#0#Twig" expanded="true" />
-            <element signature="e#3717#3725#0#Twig" expanded="true" />
-            <element signature="e#4245#4253#0#Twig" expanded="true" />
-            <element signature="e#4331#4339#0#Twig" expanded="true" />
-            <element signature="e#4451#4459#0#Twig" expanded="true" />
-            <element signature="e#4538#4546#0#Twig" expanded="true" />
-            <element signature="e#4662#4670#0#Twig" expanded="true" />
-            <element signature="e#4749#4757#0#Twig" expanded="true" />
-            <element signature="e#4767#4773#0#HTML" expanded="true" />
-            <element signature="e#4878#4888#0#Twig" expanded="true" />
-            <element signature="e#4967#4977#0#Twig" expanded="true" />
-            <element signature="e#4991#4997#0#HTML" expanded="true" />
-            <element signature="e#5100#5104#0#Twig" expanded="true" />
-            <element signature="e#5183#5187#0#Twig" expanded="true" />
-            <element signature="e#5307#5315#0#Twig" expanded="true" />
-            <element signature="e#5394#5402#0#Twig" expanded="true" />
-            <element signature="e#5518#5543#0#Twig" expanded="true" />
-            <element signature="e#5622#5647#0#Twig" expanded="true" />
-            <element signature="e#6146#6152#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
