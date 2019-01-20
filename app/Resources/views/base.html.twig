@@ -35,7 +35,7 @@
     <header>
         {% if (app.request.attributes.get('_route') == "homepage") %}
         <div class="melodi">
-            <audio class="song" loop>
+            <audio class="song" id="my_audio" type="audio/mp3" loop="loop" >
                 <source src="{{ asset('bundles/app/audio/Hi-Am-Hymn.mp3') }}">
             </audio>
             <a href="#" class="muzika">

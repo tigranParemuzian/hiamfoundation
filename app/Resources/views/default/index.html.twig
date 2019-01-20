@@ -116,9 +116,6 @@
 
         //        window.onload(.play());
 
-        document.body.onload = function (ev) {
-            document.querySelector('.song').play()
-        };
 
         var today = new Date();
         var startDate = new Date(today.getFullYear(), 6, 1);
@@ -127,6 +124,9 @@
         $("#example1").datepicker({
             appendText: "(yyyy-mm-dd)"
         });
+
+        document.querySelector('.song').play();
+
         $('.muzika').on('click', function () {
             document.querySelector('.song').pause();
             $('.muzika-play').css({left: '20px'});
