@@ -431,3 +431,32 @@ iframe {
         font-size: 48px; color: #302934; margin-top: 15px;
     }
 }
+
+footer .ccp{
+    border-top: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+footer .copyright{
+    /*margin-top: 20px;*/
+
+    color: #fff;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .design{
+    color: #1b69b5;
+}
+
+
+footer .design a{
+    color: #63b450;
+}
+footer .design img{
+    width: 25px;
+    margin-bottom: 2px;
+}
