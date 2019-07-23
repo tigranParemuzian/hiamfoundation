@@ -1,0 +1,287 @@
+
+body {
+    background-image: url('../images/back.jpg');
+}
+
+header {
+    background-image: url('../images/back_top.jpg');
+}
+
+.pl-0 {
+    padding-left: 1px !important;
+}
+
+.pr-0 {
+    padding-right: 1px !important;
+}
+
+.header img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header {
+    height: 450px;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table {
+    overflow: auto;
+}
+
+main {
+    background-image: url('../images/back.jpg');
+    -webkit-transform: translateY(-85px);
+    -moz-transform: translateY(-85px);
+    -ms-transform: translateY(-85px);
+    -o-transform: translateY(-85px);
+    transform: translateY(-85px);
+}
+
+.main {
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.menu {
+    background-image: url('../images/menu_back.png');
+    -webkit-background-size: 100% auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.menu ul {
+    padding: 7px;
+    margin: 0;
+    list-style-type: none;
+
+}
+
+.menu ul li {
+    display: block;
+    width: 100%;
+    margin: 0 0 5px 0;
+}
+
+.menu ul li a {
+    display: block;
+    width: 100%;
+    padding: 5px 0 0 25px;
+    background: url(../images/note.png) no-repeat 6px 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu ul li a.active {
+    background: url(../images/menu_active.png);
+    background-size: 100% 100%;
+    color: #fff
+}
+
+.menu ul li a:hover {
+    background: url(../images/menu_active.png);
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+.info {
+    border: 1px solid #adadad;
+    background: #fafafa;
+    padding: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.infoPath h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.infoPath p {
+    font-size: 12px;
+    /*font-weight: bold;*/
+}
+
+.quartet {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ergich {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ergich p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.quartetImg {
+    margin-top: 30px;
+}
+
+.quartetImg img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.text {
+    margin-top: 25px;
+}
+
+.text h4 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.text p {
+    font-size: 14px;
+}
+
+.member {
+    margin-top: 30px;
+}
+
+.member h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.member p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-indent: 15px;
+}
+
+.video {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.video > * {
+    max-width: 550px;
+    width: 100%;
+    height: 400px;
+}
+
+.news {
+    display: flex;
+    margin-top: 25px;
+}
+
+.news h4 {
+
+    font-weight: bold;
+}
+
+.news .date {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 14px;
+    width: 46px;
+    height: 48px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #fff 50%, #7c7c7c 50%);
+    /*color: #FFF;*/
+    border: 1px solid #7c7c7c;
+    font-weight: bold;
+    color: #000;
+    -webkit-border-radius: 0 0 0 4px;
+    -moz-border-radius: 0 0 0 4px;
+    border-radius: 0 0 0 4px;
+}
+
+.news .date p {
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+
+.news .newsContent {
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.news .content img {
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*max-width: 100% ;*/
+}
+
+.rectMain {
+    background-color: #fff;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid #adadad;
+    margin-top: 10px;
+}
+
+.rectMain .jp-single-player {
+    padding: 10px 0;
+
+}
+
+form.contacts label {
+    display: block;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+
+form.contacts {
+    max-width: 320px;
+}
+
+form.contacts input,
+form.contacts textarea {
+    width: 100%;
+}
+
+form.contacts textarea {
+    height: 100px;
+}
+
+form.contacts p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+form.contacts button {
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 3px 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+}

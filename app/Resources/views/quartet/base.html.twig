@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{% block title %}Hiamfoundation{% endblock %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" type="text/css"
+              href="{{ asset('jquery_components/bootstrap/dist/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css"
+              href="{{ asset('jquery_components/bootstrap/dist/css/bootstrap-theme.min.css') }}">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css"
+              href="{{ asset('bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css') }}">
+        {#<link rel="stylesheet" type="text/css" href="{{ asset('cparous') }}">#}
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+              rel="stylesheet" type="text/css">
+
+
+        {# my custom css#}
+        <link rel="stylesheet" type="text/css" href="http://hi-amquartet.org/styles/jplayer.css" />
+
+        <link rel="stylesheet" href="{{ asset('bundles/app/css/custom.css') }}">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+
+{% block banner %}
+    {#<header>
+        {% if (app.request.attributes.get('_route') == "homepage") %}
+        <div class="melodi">
+            <audio class="song" id="my_audio" type="audio/mp3" loop="loop" >
+                <source src="{{ asset('bundles/app/audio/Hi-Am-Hymn.mp3') }}">
+            </audio>
+            <a href="#" class="muzika">
+                <i class="fa fa-pause-circle-o fa-4x" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="muzika-play">
+                <i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i>
+            </a>
+        </div>
+        {% endif %}
+        <div class="brand">
+            <a href="{{ path('homepage') }}"><img src="{{ asset('bundles/app/images/logo.png') }}"></a></div>
+        #}{#<div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>#}{#
+        <!-- Navigation -->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                    <a class="navbar-brand" href="{{ path('homepage') }}">
+                        <img width="80px" class="img-responsive" src="{{ asset('bundles/app/images/logo.png') }}">
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        #}{#{{ dump(path('homepage')) }}#}{#
+                        <li {% if app.request.requestUri == path('homepage') %}class="active"{% endif %}>
+                            <a href="{{ path('homepage') }}">Home</a>
+                        </li>
+                        <li {% if app.request.requestUri == path('projects') %}class="active"{% endif %} >
+                            <a href="{{ path('projects') }}">Projects</a>
+                        </li>
+                        <li {% if app.request.requestUri == path('our-team') %}class="active"{% endif %} >
+                            <a href="{{ path('our-team') }}">Our&nbsp;Team</a>
+                        </li>
+                        <li {% if app.request.requestUri == path('contact-us') %}class="active"{% endif %} >
+                            <a href="{{ path('contact-us') }}">Contact&nbsp;Us</a>
+                        </li>
+                        <li {% if app.request.requestUri == path('news') %}class="active"{% endif %} >
+                            <a href="{{ path('news') }}">ANNOUNCEMENT</a>
+                        </li>
+                        <li {% if app.request.requestUri == path('about-us') %}class="active"{% endif %} >
+                            <a href="{{ path('about-us') }}">About us</a>
+                        </li>
+                        <li {% if app.request.requestUri == path('brunches-and-subdivisions') %}class="active"{% endif %} >
+                            <a href="{{ path('brunches-and-subdivisions') }}">Branches</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    </header>#}
+
+    <header>
+        <div class="header">
+            <img src="{{ asset('bundles/app/images/logo.jpg') }}" alt="">
+        </div>
+    </header>
+
+{% endblock %}
+<main>
+
+    {% block content %}
+
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 pl-0 pr-0">
+                        {% block menu %}
+                            <div class="menu">
+                                <ul>
+                                    <li><a {% if app.request.requestUri == path('quartet-homepage') %}class="active"{% endif %} href="{{ path('quartet-homepage') }}">HOME</a></li>
+                                    <li><a {% if app.request.requestUri == path('member-bio') %}class="active"{% endif %} href="{{ path('member-bio') }}">MEMBER BIOS</a></li>
+                                    <li><a {% if app.request.requestUri == path('discography') %}class="active"{% endif %} href="{{ path('discography') }}">DISCOGRAPHY</a></li>
+                                    <li><a {% if app.request.requestUri == path('performance-calendar') %}class="active"{% endif %} href="{{ path('performance-calendar') }}">PERFORMANCE CALENDAR</a></li>
+                                    <li><a {% if app.request.requestUri == path('videos') %}class="active"{% endif %} href="{{ path('videos') }}">VIDEOS</a></li>
+                                    <li><a {% if app.request.requestUri == path('quartet-news') %}class="active"{% endif %} href="{{ path('quartet-news') }}">NEWS</a></li>
+                                    <li><a {% if app.request.requestUri == path('contact-us') %}class="active"{% endif %} href="{{ path('contact-us') }}">CONTACTS</a></li>
+                                </ul>
+                            </div>
+                        {% endblock menu %}
+                    </div>
+
+                    <div class="col-md-9 pl-0 pr-0">
+                        {% block info %}
+
+                        {% endblock info %}
+                        {% block music %}
+                            <div class="rectMain" style="padding:0px 10px">
+                                <div id="jquery_jplayer"></div>
+
+                                <div class="jp-single-player">
+                                    <div class="jp-interface">
+                                        <ul class="jp-controls">
+                                            <li><a href="#" id="custom_jplayer_play" class="jp-play" tabindex="1">play</a></li>
+                                            <li><a href="#" id="custom_jplayer_pause" class="jp-pause" tabindex="1">pause</a></li>
+                                            <li><a href="#" id="custom_jplayer_stop" class="jp-stop" tabindex="1">stop</a></li>
+                                            <li><a href="#" id="custom_jplayer_volume_min" class="jp-volume-min" tabindex="1">min volume</a></li>
+                                            <li><a href="#" id="custom_jplayer_volume_max" class="jp-volume-max" tabindex="1">max volume</a></li>
+                                        </ul>
+                                        <div class="jp-progress">
+                                            <div id="custom_jplayer_load_bar" class="jp-load-bar">
+                                                <div id="custom_jplayer_play_bar" class="jp-play-bar"></div>
+                                            </div>
+                                        </div>
+                                        <div id="custom_jplayer_volume_bar" class="jp-volume-bar">
+                                            <div id="custom_jplayer_volume_bar_value" class="jp-volume-bar-value"></div>
+                                        </div>
+                                        <div id="jplayer_play_time" class="jp-play-time"></div>
+                                        <div id="jplayer_total_time" class="jp-total-time"></div>
+                                    </div>
+                                    <div id="jplayer_playlist" class="jp-playlist">
+                                        <ul>
+                                            <li>Vivaldi</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endblock music %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    {% endblock %}
+</main>
+{% block footer %}
+
+
+
+
+{% endblock %}
+
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('jquery_components/jquery/dist/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('jquery_components/jquery-ui/jquery-ui.min.js') }}"></script>
+    <script type="text/javascript" src="http://hi-amquartet.org/js/jplayer.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            var jpPlayTime = $("#jplayer_play_time");
+            var jpTotalTime = $("#jplayer_total_time");
+
+            $("#jquery_jplayer").jPlayer({
+                swfPath: "/js",
+                ready: function () {
+                    this.element.jPlayer("setFile", " {{ asset('bundles/app/audio/01._Concerto_No_._1_In_E,_Rv_269_spring_-_I_Allegro_.mp3') }} ");
+                },
+                volume: 50,
+                customCssIds: true,
+                errorAlerts:true,
+                nativeSuport:false
+            })
+                .jPlayer("cssId", "play", "custom_jplayer_play")
+                .jPlayer("cssId", "pause", "custom_jplayer_pause")
+                .jPlayer("cssId", "stop", "custom_jplayer_stop")
+                .jPlayer("cssId", "loadBar", "custom_jplayer_load_bar")
+                .jPlayer("cssId", "playBar", "custom_jplayer_play_bar")
+                .jPlayer("cssId", "volumeMin", "custom_jplayer_volume_min")
+                .jPlayer("cssId", "volumeMax", "custom_jplayer_volume_max")
+                .jPlayer("cssId", "volumeBar", "custom_jplayer_volume_bar")
+                .jPlayer("cssId", "volumeBarValue", "custom_jplayer_volume_bar_value")
+                .jPlayer("onProgressChange", function(loadPercent, playedPercentRelative, playedPercentAbsolute, playedTime, totalTime) {
+                    jpPlayTime.text($.jPlayer.convertTime(playedTime));
+                    jpTotalTime.text($.jPlayer.convertTime(totalTime));
+                })
+                .jPlayer("onSoundComplete", function() {
+                });
+        });
+    </script>
+{% endblock %}
+</body>
+</html>

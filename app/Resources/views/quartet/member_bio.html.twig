@@ -1,0 +1,147 @@
+{% extends ':quartet:base.html.twig' %}
+{#
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">{{ result.page.name|split(' ')[0] }}
+                        <strong>{{ result.page.name|split(' ')[1] }}</strong>
+                    </h2>
+                    <hr>
+                </div>
+
+                {% for key,person in result.data['Persons'][0].listValues %}
+
+                    {% set lname = '' %}
+                    {% set fname = '' %}
+                    {% set position = '' %}
+                    {% set slug = person.slug %}
+                    {% set image = person.image.first.getDownloadLink %}
+                    {% for txt in person.text %}
+                        {% if 'firstname' in txt.slug %}{% set lname = txt.value %}{% endif %}
+                        {% if 'lastname' in txt.slug %}{% set fname = txt.value %}{% endif %}
+                        {% if 'position' in txt.slug %}{% set position = txt.value %}{% endif %}
+                        #}{#{% if 'description' in txt.slug %}{% endif %}#}{#
+                    {% endfor %}
+
+                <div class="col-md-3 text-center card-fixed">
+                    <a href="{{ path('our-team-single', {'slug':slug}) }}">
+                        <img class="img-responsive staff-image" src="{{ asset(image)|lbImageFilter('team_slall') }}" alt="{{ lname }} {{ fname }} {{ position }}">
+                        <h4>{{ lname }} {{ fname }}<br/>
+                            <small class="text-capitalize">{{ position }}</small>
+                        </h4>
+                    </a>
+                </div>
+                {% if key+1 % 3 == 0 %}<div class="clearfix"></div>{% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+{% endblock %}#}
+
+
+
+{% block info %}
+    <div class="info">
+        <div class="infoPath">
+            <h2>Member Bios</h2>
+        </div>
+
+            <div class="member">
+                <h4>Tigran Erkanian</h4>
+                <p>Tigran Yerkanian was born in Yerevan, Armenia, in 1963, in a family of musicians, and he began his
+                    musical studies at the age of six with his father Ruben Erkanian.</p>
+
+                <p>In 1971, at the age of 18, he graduated from P.I. Tchaikovsky School of Music for Gifted Children.
+                    He then entered the Komitas State Conservatory in Yerevan, and performed in numerous competitions
+                    and recitals around the country.</p>
+
+                <p> In 1986, he finished his studies with high marks, receiving a masters degree as a Orchestra Soloist
+                    and Professor of Violin.</p>
+
+                <p>He continued his career as violinist with several orchestras including the Armenian State Symphony
+                    Orchestra, Ensemble for Violin Soloists, and the State Chamber Orchestra of Armenia, touring across
+                    the nation and the former Soviet Union. Meanwhile, he continued to perform as a soloist and
+                    dedicated himself to chamber music.</p>
+
+                <p>He was invited in 1988 as a violinist and violist by the “Tagharan” Early Music Ensemble, who
+                    performed medieval and Baroque music. They toured across Europe and also performed in South America
+                    on two occasions. In 1989 and 1990, he gave recitals in Argentina and Uruguay with this same
+                    group. </p>
+
+                <p>From 1993 until 2008, Tigran Erkanian was based in Argentina. He worked as the violin solo guide in
+                    the Avellaneda Symphony. Between 1994 and 1995, he participated in the National Symphony Orchestra
+                    and the "Bank of Mayo Chamber Orchestra".</p>
+
+                <p>From 1995 until 2008, he was one of the first violinists in the Philharmonic Orchestra of Buenos
+                    Aires.
+                    Most notably, he has performed with world renowned conductors such as Zubin Mehta, Charles Dutoit,
+                    and Franz-Paul Decker, he has accompanied Luciano Pavarotti, Placido Domingo, and Jose Carreras, and
+                    has played with the famous, Pinchas Zukerman, Itzhak Perlman, Midori, and Yo-Yo Ma.</p>
+            </div>
+
+            <div class="member">
+                <h4>Armen Mangasaryan</h4>
+                <p>Armen Mangasaryan started his musical education in Yerevan, Armenia, at P.I. Tchaikovsky School of
+                    Music for Gifted Children and graduated in 1980. He continued his musical studies at the Yerevan
+                    State Conservatory named after Komitas with Professor Villi Mokatsyan. He graduated with an MM
+                    degree and qualification of Soloist of Orchestra in 1985. In 1981, Mr. Mangasaryan assumed the
+                    position of the first violinist with the conservatories’ opera studio orchestra where he worked
+                    until 1990 under the supervision of maestro Rafael Mangasaryan. At the same time, between 1985 to
+                    1987, Mr. Mangasaryan was working with the National Radio and Television symphony orchestra as a
+                    first violinist. In 1990, Mr. Mangasaryan joined the Armenian Philharmonic Orchestra and
+                    successfully performed in the USA, Canada, France, Belgium, Switzerland, Germany, Austria, Greece,
+                    Spain, and Russia. Mr. Mangasaryan moved to the Los Angeles area in the June of 2001 and joined the
+                    faculty of International School of Music in the August of 2001.</p>
+            </div>
+
+            <div class="member">
+                <h4>Sahak Karapetyan</h4>
+                <p>Sahak Karapetyan was born in Armenia and earned his M.A. n music performance from the Komitas State
+                    Conservatory. He joined the “Tagharan” Early Music Ensemble in 1983 and five years later, became its
+                    Concertmaster and assistant Conductor representing Armenia during numerous performances in Western
+                    Europe, Latin America, Middle East, and Russia. </p>
+
+                <p>Other musical activities of Sahak Karapetyan include having been a Concertmaster of the Yerevan
+                    Symphony Orchestra (Armenia), a co-founder, Concertmaster and Assistant Conductor of the “Armenian
+                    State Youth Opera House” and serving as the Music Director of the St. Gregory Armenian Catholic
+                    Church in Glendale, California.</p>
+
+                <p>Currently, Sahak Karapetyan is a member of the Santa Barbara Symphony, Redlands Symphony, San
+                    Bernardino Symphony and regularly plays as a substitute with the Long Beach Symphony and Riverside
+                    Philharmonic.</p>
+            </div>
+
+            <div class="member">
+                <h4>Hovik Hovhannisyan</h4>
+                <p>Hovik Hovhannisyan is an exceptional cellist and teacher. In 1980, he received his Bachelor’s degree
+                    as a cellist at the college of Peter Tchaikovsky in Yerevan, Armenia. He then earned his Master of
+                    Arts degree at the Komitas Conservatory of Armenia in 1986. </p>
+
+                <p>Hovik performed with the Armenian National Philharmonic Orchestra from 1986-2000, and recorded over
+                    twenty CD’s, in addition to traveling to the USA, Canada, Russia, Germany, Austria, France,
+                    Switzerland, England, Luxemburg, Spain, Portugal, Greece, Cyprus, and many other countries.
+                    In 1985, he received first place in the Tran Caucasian competition for solo cello performers. In
+                    2004, Hovik received the Angel and Gold Star Awards from the Southern California Motion Picture
+                    Council for his performance and contribution to the entertainment industry. </p>
+
+                <p>Hovik Hovhannisyan currently plays with the Southern California Philharmonic Orchestra as a principal
+                    cellist. He also plays with the Ventura Symphony Orchestra and the La Cañada Presbyterian Church
+                    Symphony Orchestra from 2006. Since 2008, he has been a member of the Hi-Am String Quartet. </p>
+
+                <p>Hovhannisyan has more than fifteen years of teaching experience. He currently teaches at the
+                    Tchaikovsky school of music in Walnut, California and at the Royal Academy of Music in Montobello.
+                    He also gives private lessons in Los Angeles, and the majority of his students have chosen music as
+                    their professional careers.</p>
+            </div>
+
+
+    </div>
+
+
+{% endblock info %}
+
+

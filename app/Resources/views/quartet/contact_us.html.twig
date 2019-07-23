@@ -1,0 +1,34 @@
+{% extends ':quartet:base.html.twig' %}
+
+
+
+{% block info %}
+    <div class="info">
+
+        <div class="infoPath">
+            <h2>Contact Us</h2>
+        </div>
+
+        <form class="contacts" action="">
+            <div>
+                <label for="name">* Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div>
+                <label for="email">* E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="message">* Message</label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+
+            <p>
+                <button>send</button>
+            </p>
+        </form>
+
+    </div>
+{% endblock info %}
