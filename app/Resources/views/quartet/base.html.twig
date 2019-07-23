@@ -29,72 +29,6 @@
 <body>
 
 {% block banner %}
-    {#<header>
-        {% if (app.request.attributes.get('_route') == "homepage") %}
-        <div class="melodi">
-            <audio class="song" id="my_audio" type="audio/mp3" loop="loop" >
-                <source src="{{ asset('bundles/app/audio/Hi-Am-Hymn.mp3') }}">
-            </audio>
-            <a href="#" class="muzika">
-                <i class="fa fa-pause-circle-o fa-4x" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="muzika-play">
-                <i class="fa fa-play-circle-o fa-4x" aria-hidden="true"></i>
-            </a>
-        </div>
-        {% endif %}
-        <div class="brand">
-            <a href="{{ path('homepage') }}"><img src="{{ asset('bundles/app/images/logo.png') }}"></a></div>
-        #}{#<div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>#}{#
-        <!-- Navigation -->
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                    <a class="navbar-brand" href="{{ path('homepage') }}">
-                        <img width="80px" class="img-responsive" src="{{ asset('bundles/app/images/logo.png') }}">
-                    </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        #}{#{{ dump(path('homepage')) }}#}{#
-                        <li {% if app.request.requestUri == path('homepage') %}class="active"{% endif %}>
-                            <a href="{{ path('homepage') }}">Home</a>
-                        </li>
-                        <li {% if app.request.requestUri == path('projects') %}class="active"{% endif %} >
-                            <a href="{{ path('projects') }}">Projects</a>
-                        </li>
-                        <li {% if app.request.requestUri == path('our-team') %}class="active"{% endif %} >
-                            <a href="{{ path('our-team') }}">Our&nbsp;Team</a>
-                        </li>
-                        <li {% if app.request.requestUri == path('contact-us') %}class="active"{% endif %} >
-                            <a href="{{ path('contact-us') }}">Contact&nbsp;Us</a>
-                        </li>
-                        <li {% if app.request.requestUri == path('news') %}class="active"{% endif %} >
-                            <a href="{{ path('news') }}">ANNOUNCEMENT</a>
-                        </li>
-                        <li {% if app.request.requestUri == path('about-us') %}class="active"{% endif %} >
-                            <a href="{{ path('about-us') }}">About us</a>
-                        </li>
-                        <li {% if app.request.requestUri == path('brunches-and-subdivisions') %}class="active"{% endif %} >
-                            <a href="{{ path('brunches-and-subdivisions') }}">Branches</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
-    </header>#}
 
     <header>
         <div class="header">
@@ -167,11 +101,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
 
     {% endblock %}
 </main>
