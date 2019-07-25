@@ -14,7 +14,9 @@
               href="{{ asset('jquery_components/bootstrap/dist/css/bootstrap-theme.min.css') }}">
         <!-- Fonts -->
         {# my custom css#}
-        <link rel="stylesheet" type="text/css" href="http://hi-amquartet.org/styles/jplayer.css" />
+{#        <link rel="stylesheet" type="text/css" href="http://hi-amquartet.org/styles/jplayer.css" />#}
+        <link rel="stylesheet" href="{{ asset('bundles/app/js/player/player.css') }}">
+{#        <link rel="stylesheet" href="{{ asset('bundles/app/js/jPlayer-2.9.2/dist/skin/pink.flag/css/jplayer.pink.flag.min.css') }}">#}
 
         <link rel="stylesheet" href="{{ asset('bundles/app/css/custom.css') }}">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -117,7 +119,7 @@
 {% block javascripts %}
     <script type="text/javascript" src="{{ asset('jquery_components/jquery/dist/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('jquery_components/jquery-ui/jquery-ui.min.js') }}"></script>
-    <script type="text/javascript" src="http://hi-amquartet.org/js/jplayer.js"></script>
+    <script src="{{ asset('bundles/app/js/player/player.js') }}"></script>
     <script>
         $(document).ready(function (e) {
             var jpPlayTime = $("#jplayer_play_time");
