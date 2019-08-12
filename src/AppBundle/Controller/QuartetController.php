@@ -79,7 +79,7 @@ class QuartetController extends Controller
     }
 
     /**
-     * @Route("/contact-us", name="contact-us")
+     * @Route("/contact-us", name="quartet-contact-us")
      * @param Request $request
      *
      */

@@ -58,7 +58,7 @@
                                     <li><a {% if app.request.requestUri == path('performance-calendar') %}class="active"{% endif %} href="{{ path('performance-calendar') }}">PERFORMANCE CALENDAR</a></li>
                                     <li><a {% if app.request.requestUri == path('videos') %}class="active"{% endif %} href="{{ path('videos') }}">VIDEOS</a></li>
                                     <li><a {% if app.request.requestUri == path('quartet-news') %}class="active"{% endif %} href="{{ path('quartet-news') }}">NEWS</a></li>
-                                    <li><a {% if app.request.requestUri == path('contact-us') %}class="active"{% endif %} href="{{ path('contact-us') }}">CONTACTS</a></li>
+                                    <li><a {% if app.request.requestUri == path('quartet-contact-us') %}class="active"{% endif %} href="{{ path('quartet-contact-us') }}">CONTACTS</a></li>
                                 </ul>
                             </div>
                         {% endblock menu %}
