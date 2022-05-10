@@ -126,6 +126,15 @@ class DefaultController extends Controller
     }
 
     /**
+     * @Route("/hi-heritage", name="hi-heritage")
+     * @param Request $request
+     */
+    public function hiHeritageAction(Request $request){
+
+        return $this->render(':default:hi_heritage.html.twig');
+    }
+
+    /**
      * @Route("/brunches-and-subdivisionsus", name="brunches-and-subdivisions")
      * @param Request $request
      */
