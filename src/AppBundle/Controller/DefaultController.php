@@ -126,7 +126,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/hi-heritage", name="hi-heritage")
+     * @Route("/hi-math", name="hi-math")
      * @param Request $request
      */
     public function hiHeritageAction(Request $request){
